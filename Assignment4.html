@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            width: 100%;
+            /* height: 500px; */
+            height: 100vh;
+
+
+        }
+
+        .container2 {
+            width: 100%;
+            height: 300px;
+
+            display: inline-flex;
+            justify-content: space-evenly;
+        }
+
+        .container3 {
+            width: 100%;
+            height: 400px;
+
+            display: inline-flex;
+            box-decoration-break: unset;
+        }
+
+        .container4 {
+            width: 100%;
+            height: 400px;
+
+            display: inline-flex;
+            box-decoration-break: unset;
+            justify-content: space-evenly;
+        }
+
+        .container5 {
+            width: 99%;
+            height: 320PX;
+            background-color: rgb(73, 72, 72);
+            border-radius: 20px;
+            margin: 10px;
+            box-decoration-break: unset;
+            
+        
+        }
+
+        .header {
+            width: 99%;
+            height: 15vh;
+            background-color: gray;
+            border-radius: 20px;
+            margin: 10px;
+            /* text-align: center;
+            line-height: 10vh; */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            justify-content: right;
+            display: inline-flex;
+
+
+        }
+
+        .banner {
+            width: 99%;
+            height: 85vh;
+            background-color: gainsboro;
+            border-radius: 20px;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            /* text-align: center;
+            line-height: 60vh; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-image: url(https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfHwwfHw%3D&w=1000&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section1 {
+            text-align: center;
+            margin: 10px;
+            padding-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        .section-2 {
+            text-align: center;
+            margin: 20px;
+            padding-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        .section-3 {
+            text-align: center;
+            /* margin: 10px;  */
+            padding-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        .section-4 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .ckl1 {
+            width: 290px;
+            height: 290px;
+            background-color: gold;
+            margin: 10px;
+            border-radius: 100%;
+            margin-left: 20px;
+            background-image: url(https://thumbs.dreamstime.com/z/passport-document-id-photo-business-man-portrait-concept-young-handsome-stylish-guy-formal-wear-white-background-119717703.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .ckl2 {
+            width: 290px;
+            margin: 10px;
+            height: 290px;
+            background-color: gold;
+            border-radius: 50%;
+            margin-left: 30px;
+            background-image: url(https://manofmany.com/wp-content/uploads/2021/03/How-to-Look-Good-in-Photos-Master-Your-Smile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .ckl3 {
+            width: 290px;
+            height: 290px;
+            background-color: gold;
+            margin: 10px;
+            border-radius: 100%;
+            margin-left: 40px;
+            background-image: url(https://images.unsplash.com/photo-1616002411355-49593fd89721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHdvbWFuJTIwZmFjZXxlbnwwfHwwfHw%3D&w=1000&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .ckl4 {
+            width: 290px;
+            height: 290px;
+            border-radius: 100%;
+            background-color: gold;
+            margin: 10px;
+            margin-left: 60px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9WAbPIA3viBTSIch5tdoYE5gB_e8RL50AVw&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .maincontent {
+            width: 50%;
+            height: 380px;
+            margin: 10px;
+            background-color: rgb(101, 96, 87);
+            /* text-align: center;
+           line-height: 60vh; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .main2 {
+            width: 50%;
+            height: 380px;
+            margin: 10px;
+
+
+
+        }
+
+        .artical1 {
+            width: 100%;
+            height: 125px;
+            background-color: palevioletred;
+            text-align: center;
+            /* line-height: 18vh; */
+            background-image: url(https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .artical2 {
+            width: 100%;
+            height: 125px;
+            background-color: gold;
+            margin-top: 10px;
+            text-align: center;
+            /* line-height: 20vh; */
+            background-image: url(https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2016Q4/8-steps-to-build-a-project-management-timeline@2x.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .artical3 {
+            width: 100%;
+            height: 112px;
+            background-color: darkmagenta;
+            margin-top: 10px;
+            text-align: center;
+            /* line-height: 21vh; */
+            background-image: url(https://www.ntaskmanager.com/wp-content/uploads/2019/07/project-management-is-a-by-product-of-focused-hard-work.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box1 {
+            width: 23%;
+            height: 380;
+            background-color: rgb(94, 87, 87);
+            margin: 10px;
+
+        }
+
+        .box2 {
+            width: 23%;
+            height: 380;
+            background-color: rgb(124, 119, 119);
+            margin: 10px;
+
+        }
+
+        .box3 {
+            width: 23%;
+            height: 380;
+            background-color: rgb(94, 87, 87);
+            margin: 10px;
+
+        }
+
+        .box4 {
+            width: 23%;
+            height: 380;
+            background-color: rgb(94, 87, 87);
+            margin: 10px;
+
+
+        }
+
+        .container1 > .header > ul {
+            text-decoration: none;
+            display: flex;
+            /* margin: 10px;
+        padding: 30px; */
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+       .container1 > .header > ul li {
+            font-size: 22px;
+            color: white;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container1 > .header > ul li:hover {
+            background-color: rgb(59, 59, 56);
+        }
+
+        #asses {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: white;
+            padding-top: 30px;
+            padding-left: 15px;
+
+        }
+
+        #about1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: white;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        #project {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+
+            text-align: left;
+            padding-left: 5px;
+            overflow: hidden;
+        }
+
+        .pro {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 31vh;
+            background-color: rgb(24, 24, 23);
+            display: flex;
+        }
+
+        .footer1 {
+            width: 55%;
+            height: 30vh;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .footer2 {
+            width: 18%;
+            height: 30vh;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .footer3 {
+            width: 18%;
+            height: 30vh;
+            background-color: rgb(73, 72, 72);
+
+        }
+
+        .footer4 {
+            width: 18%;
+            height: 30vh;
+            background-color: rgb(73, 72, 72);
+
+        }
+        .footer2 > ul li{
+            font-size: 20px;
+            padding-left: 20px;
+            color: black;
+            padding-top: 10px;
+
+        }
+        .footer3 > ul li{
+            font-size: 20px;
+            padding-left: 20px;
+            color: black;
+            padding-top: 10px;
+        }
+        .footer4 > ul li{
+            font-size: 18px;
+            padding-left: 15px;
+            color: black;
+            padding-top: 10px;
+        }
+         li:hover {
+            background-color: yellow;
+        }
+        .btn33:hover{
+            background-color: black;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1" id="con1">
+        <div class="header">
+            <ul>
+                <a href="#con1">
+                    <li>HOME</li>
+                </a>
+                <a href="#ab">
+                    <li>ABOUT</li>
+                </a>
+                <a href="#team">
+                    <li>TEAM</li>
+                </a>
+                <a href="#tec">
+                    <li>TECHNOLOGIES</li>
+                </a>
+                <a href="#foot">
+                    <li style="margin-right:50px ;">CONTACT</li>
+                </a>
+            </ul>
+
+        </div>
+        <div class="banner">
+            <h1 id="asses">Assessment-4</h1>
+        </div>
+    </div>
+    <h2 class="section1" id="team">Team Members</h2>
+    <div class="container2">
+        <div class="ckl1"></div>
+        <div class="ckl2"></div>
+        <div class="ckl3"></div>
+        <div class="ckl4"></div>
+    </div>
+    <h3 class="section-2">About Us</h3>
+    <div class="container3" id="ab">
+        <div class="maincontent">
+            <h4 id="about1">About Us</h4>
+            <p id="project"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae quidem maxime
+                veniam minus sunt, earum voluptas explicabo numquam, autem aliquam iure quas mollitia alias laborum sed
+                expedita perferendis in asperiores fugit quos. Cum deserunt, blanditiis similique fugit recusandae iste
+                sequi, quibusdam ipsa reprehenderit mollitia officiis, quae debitis possimus asperiores. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Debitis cumque accusantium soluta dolor
+                asperiores tempora dicta quaerat reiciendis rem autem expedita nam voluptas deserunt exercitationem
+                necessitatibus nesciunt labore, aliquam, placeat perspiciatis! Quae minima esse, non porro vero laborum
+                iure voluptatibus optio beatae eligendi aperiam praesentium commodi reiciendis illo ex dolorem.Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Veniam ullam blanditiis architecto voluptatem!
+                Temporibus dolorem blanditiis atque quis ab cum repellat dolores. Ratione cum, modi voluptatum soluta
+                obcaecati accusamus rerum animi, aspernatur fugiat commodi reprehenderit quo assumenda quis tempora
+                odit?</p>
+        </div>
+        <div class="main2">
+            <div class="artical1">
+                <h4 class="pro">Project-1</h4>
+            </div>
+            <div class="artical2">
+                <h4 class="pro">Project-2</h4>
+            </div>
+            <div class="artical3">
+                <h4 class="pro">Project-3</h4>
+            </div>
+        </div>
+    </div>
+    <h3 class="section-3" id="tec">Technologies Used</h3>
+    <div class="container4">
+        <div class="box1">
+            <img style="width:100% ; height: 170px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFNtdsD0368CCfF0eVcTHuuOSbxNk2R_eBg&usqp=CAU"
+                alt=" HTML image">
+            <h2 style="text-align: center; color: white; padding: 10px;">Introduction to HTML</h2>
+            <p style="color: white; font-size: 15px; overflow: hidden;padding-left: 10px;">Lorem ipsum dolor, sit elit.
+                Consequatur, officia illo! Laudantium, inventore. Temporibus illo quia ea fugit, illum cum! Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Ullam ad in esse earum quos quis modi. Ea
+                mollitia, voluptatibus est asperiores inventore nihil adipisci, quos dolores aliquid minus incidunt
+                commodi!</p>
+            <button id="btn1"
+                style="border-radius: 12px; padding: 8px;width: auto; width: 98%; margin: auto; background-color: red; margin-left: 3px; margin-top: 10px; "><a
+                    style="text-decoration:none; color: white; font-size: 17px;" href="">Read More</a></button>
+        </div>
+        <div class="box2">
+
+            <img style="width:100% ; height: 170px;" src="https://www.codespot.org/assets/css.jpg" alt=" HTML image">
+            <h2 style="text-align: center; color: white; padding: 10px;">Introduction to CSS</h2>
+            <p style="color: white; font-size: 15px; overflow: hidden;padding-left: 10px;">Lorem ipsum dolor, sit elit.
+                Consequatur, officia illo! Laudantium, inventore. Temporibus illo quia ea fugit, illum cum! Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Ullam ad in esse earum quos quis modi. Ea
+                mollitia, voluptatibus est asperiores inventore nihil adipisci, quos dolores aliquid minus incidunt
+                commodi!</p>
+            <button id="btn2"
+                style="border-radius: 12px; padding: 8px;width: auto; width: 98%; margin: auto; background-color: red; margin-left: 3px; margin-top: 10px; "><a
+                    style="text-decoration:none; color: white; font-size: 17px;" href="">Read More</a></button>
+
+        </div>
+        <div class="box3">
+            <img style="width:100% ; height: 170px;"
+                src="https://themewagon.com/wp-content/uploads/2018/07/Rango-free-small-business-website-template-1.jpg"
+                alt=" HTML image">
+            <h2 style="text-align: center; color: white; padding: 10px;">Introduction to Bootstrap</h2>
+            <p style="color: white; font-size: 15px; overflow: hidden;padding-left: 10px;">Lorem ipsum dolor, sit elit.
+                Consequatur, officia illo! Laudantium, inventore. Temporibus illo quia ea fugit, illum cum! Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Ullam ad in esse earum quos quis modi. Ea
+                mollitia, voluptatibus est asperiores inventore nihil adipisci, quos dolores aliquid minus incidunt
+                commodi!</p>
+            <button class="btn33"
+                style="border-radius: 12px; padding: 8px;width: auto; width: 98%; margin: auto; background-color: red; margin-left: 3px; margin-top: 10px; "><a
+                    style="text-decoration:none; color: white; font-size: 17px;" href="">Read More</a></button>
+
+        </div>
+        <div class="box4">
+
+            <img style="width:100% ; height: 170px;"
+                src="data:image/jpeg;base64,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"
+                alt=" HTML image">
+            <h2 style="text-align: center; color: white; padding: 10px;">Introduction to JavaScript</h2>
+            <p style="color: white; font-size: 15px; overflow: hidden;padding-left: 10px;">Lorem ipsum dolor, sit elit.
+                Consequatur, officia illo! Laudantium, inventore. Temporibus illo quia ea fugit, illum cum! Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Ullam ad in esse earum quos quis modi. Ea
+                mollitia, voluptatibus est asperiores inventore nihil adipisci, quos dolores aliquid minus incidunt
+                commodi!</p>
+            <button
+                style="border-radius: 12px; padding: 8px;width: auto; width: 98%; margin: auto; background-color: red; margin-left: 3px; margin-top: 10px; "><a
+                    style="text-decoration:none; color: white; font-size: 17px;" href="">Read More</a></button>
+
+
+        </div>
+    </div>
+    <h3 class="section-4" style="padding: 10px; font-size: 20px;">Contact US</h3>
+
+    <div class="container5" id="foot">
+        <div class="footer">
+            <div class="footer1">
+                <h3 style="margin-left: 10px; margin-top:10px ; color: white; font-size: 25px;">ABOUT</h3>
+                <h4 style="margin-left: 10px; font-size: 18px; color: black; padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore quasi ut mollitia vero,
+                    sit consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et debitis eos rem quia quae repellendus laudantium velit voluptate. A numquam, dignissimos esse natus deleniti dolor tenetur omnis? esse nisi cum consequuntur aliquam sunt unde accusantium placeat alias earum
+                    necessitatibus. Exercitationem nesciunt alias, magni reprehenderit quae iure magnam tempore
+                    dignissimos totam minus quod delectus ipsum repellendus unde provident. Tempore corrupti ratione
+                    inventore?</h4>
+
+            </div>
+            <div class="footer2">
+                <H3 style="margin-left:15px ;margin-top:10px ; color: white; font-size: 25px;">Categories</H3>
+                <ul style="list-style:none ;">
+                    <li>HOME</li>
+                    <li>PHP</li>
+                    <li>JAVASCRIPT</li>
+                    <li>ANGULAR</li>
+                    <li>SHAILESH</li>
+                </ul>
+
+            </div>
+            <div class="footer3">
+                <H3 style="margin-left:15px ;margin-top:10px ; color: white; font-size: 25px;">Quick Link</H3>
+                <ul style="list-style:none ;">
+                   <a href="" style="text-decoration:none;"><li>About US</li></a> 
+                  <a href="https://www.google.com/"style="text-decoration:none;"><li> <i class="fa fa-google"></i> Google</li></a>  
+                  <a href="https://www.facebook.com/"style="text-decoration:none;  "><li><i class="fa fa-facebook"></i>Facebook </li></a>  
+                  <a href="https://www.instagram.com/"style="text-decoration:none;"><li><i class="fa fa-instagram"></i> Instagram</li></a>  
+                  <a href="https://twitter.com/i/flow/login"style="text-decoration:none;"><li><i class="fa fa-twitter"></i> Twitter</li></a>  
+                    </ul>
+            </div>
+            <div class="footer4">
+                <H3 style="margin-left:15px ;margin-top:10px ; color: white; font-size: 25px;">Contact US</H3>
+                <ul style="list-style:none ;">
+                    <li> <i class="fa fa-home"></i> Sector-8 Noida</li>
+                    <li>Mobial:7618629116</li>
+                    <li>shkumar@ingenuitygaming.com</li>
+                
+                    <li>SHAILESH</li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="signup" style=" display: flex;text-align: center;">
+            <h2 style="text-align: center; margin-left: 670px;margin-top: 20PX;">RESISTER FOR FREE</h2>
+            <button class="btu" style="margin-left: 20px; margin-top: 15PX; background-color: yellow; padding: 13PX; border-radius: 12PX;"><a href=""  style="font-size: 15PX; ">SIGNUP</a></button>
+        </div>
+       
+ 
+    </div>
+</body>
+
+</html>
