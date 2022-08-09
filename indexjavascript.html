@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Fundamantals</title>
+    <style>
+        .op
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: wheat;
+            
+        }
+    </style>
+   
+</head>
+<body>
+    
+    
+        
+    <h1 style="text-align: center; background-color: rgb(125, 123, 121); margin: 15px; padding: 10px; color: white;  margin: auto;">Hello your Name is:- <span id="name3"></span></h1>
+    <h1 style="text-align: center ; color: beige;font-size: 80px;">Today Date is <span id="date"></span></h1>
+    <h3 class="op">Addition of Numbers: <span id="add"></span></h3>
+    <h3 class="op" >Division of Numbers: <span id="divi"></span></h3>
+    
+    <h3 class="op">Multiplication of Numbers: <span id="mul"></span></h3>
+    <h3 class="op">Subtraction of Numbers: <span id="sub"></span></h3>
+
+
+    <script>
+        document.body.style.backgroundColor='red';
+        var name=prompt("Enter your Name");
+        var a=prompt("Enter the First Number");
+        var b=prompt("Enter the Second Number");
+        
+        var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   var date = today.getFullYear()+'/'+(today.getMonth()+01)+'/'+today.getDate();
+  var date = ('0'+(today.getMonth()+01))+'/'+"0"+today.getDate()+'/'+today.getFullYear();
+
+  //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date;
+   
+  document.getElementById("date").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+        
+        
+        
+        var add=Number(a) + Number(b);
+        var divide=a/b;
+        var mult=a*b;
+        
+        var minu=a-b;
+        
+         document.getElementById("name3").innerHTML=name;
+        document.getElementById("add").innerHTML=add;
+        document.getElementById("divi").innerHTML=divide;
+        document.getElementById("mul").innerHTML=mult;
+        document.getElementById("sub").innerHTML=minu;
+        // document.getElementById("date").innerHTML=date2;
+        // document.getElementById("day").innerHTML=day;
+
+    </script>
+</body>
+</html>
