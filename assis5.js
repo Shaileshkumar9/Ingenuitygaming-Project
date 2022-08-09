@@ -7,8 +7,19 @@ var b=prompt("Enter the Second Number");
 var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-//   var date = today.getFullYear()+'/'+(today.getMonth()+01)+'/'+today.getDate();
-var date = "0"+today.getDate()+'/'+ ('0'+(today.getMonth()+01))+'/'+today.getFullYear();
+
+//var date = "0"+today.getDate()+'/'+ ('0'+(today.getMonth()+01))+'/'+today.getFullYear();
+if(today.getDate()<10 )
+{
+    var date = "0"+today.getDate()+'/'+ ('0'+(today.getMonth()+01))+'/'+today.getFullYear(); 
+}
+
+
+else
+{
+    var date = today.getDate()+'/'+ ('0'+(today.getMonth()+01))+'/'+today.getFullYear();
+}
+
 
 //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = date;
