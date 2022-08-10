@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-7</title>
 </head>
-<body>
-
-    <h2 style="text-align:  center; font-size: 25px; background-color: aquamarine; padding: 10px;"> Sum of your input's positive numbers:- <span id="sum"></span></h2>
+<body style="background-color: gold;">
+    <h3 style=" font-size: 25px; color: white; "> Total  input positive Number: <span id="to" style="font-size: 20px;"></span> </h3>
+    <h2 style="text-align:  center; font-size: 25px; background-color: aquamarine; padding: 10px;"> Sum of your input's positive numbers:  <span id="sum"></span></h2>
 
     <script>
         var sum=0;
+        var i=0;
                while(true)
                {
                 var number=prompt("Enter the Number");
                 if(number>=0)
                 {
                        sum=Number(sum)+ Number(number);
+                       i++;
                 }
+                
                 if(number<0)
                 {
                     break;
                 }
                }
+
                document.getElementById("sum").innerHTML=sum;
+               document.getElementById("to").innerHTML=i;
 
     </script>
 </body>
