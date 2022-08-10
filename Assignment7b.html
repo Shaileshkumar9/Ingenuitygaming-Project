@@ -35,7 +35,7 @@
       for (var i = 0; i < 3; i++) {
         var number = parseInt(prompt("Guess a number from 1 to 10"));
         if (number == random) {
-          document.getElementById("won").innerHTML = "User Won";
+          document.getElementById("won").innerHTML = " Congratulations!! You have won the game ";
           document.getElementById("di").style.backgroundImage="URL('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/winner-poster-template-71996af1ff1a0fe513510af11629eb77_screen.jpg?ts=1561495296')";
 
           break;
@@ -44,7 +44,7 @@
         }
       }
       if (i == 3) {
-        document.getElementById("won").innerHTML = "User lose";
+        document.getElementById("won").innerHTML = "You have lost the Game!!";
         document.getElementById("di").style.backgroundImage="URL('https://i.ytimg.com/vi/3NQO-A9fLd0/maxresdefault.jpg')";
       }
     </script>
