@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-7</title>
+</head>
+<body>
+
+    <h2 style="text-align:  center; font-size: 25px; background-color: aquamarine; padding: 10px;"> Sum of your input's positive numbers:- <span id="sum"></span></h2>
+
+    <script>
+        var sum=0;
+               while(true)
+               {
+                var number=prompt("Enter the Number");
+                if(number>=0)
+                {
+                       sum=Number(sum)+ Number(number);
+                }
+                if(number<0)
+                {
+                    break;
+                }
+               }
+               document.getElementById("sum").innerHTML=sum;
+
+    </script>
+</body>
+</html>

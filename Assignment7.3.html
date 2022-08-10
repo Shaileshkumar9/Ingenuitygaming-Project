@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+    .box1{
+      margin: auto;
+      padding: 10px;
+      background-color: rgb(153, 160, 160);
+      height: 30vh ;
+      font-size: 30px;
+      text-align: center;
+      font-size: medium;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+</style>
+</head>
+<body style="background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,148,231,0.7319970224417892) 100%);">
+    
+    <div class="box1">
+        <h1 id="box11"></h1>
+    </div>
+    <script>
+      
+
+    var person_Obj={
+    name:"Shailesh Kumar",
+    age:20,
+    address:{city:"Kasganj",state:"Uttar Pradesh",pincode:207123},
+    hobbies:["cricket","playing badminton","playing games"],
+    display:function(){
+        return (`Name: ${this.name} <br> Age: ${this.age} <br> Address: ${this.address.city}, ${this.address.state}, ${this.address.pincode} <br> Hobbies is: ${this.hobbies[0]}, ${this.hobbies[1]}, ${this.hobbies[2]}`);
+    }
+}
+document.getElementById("box11").innerHTML=person_Obj.display();
+//document.write(person_Obj.display());
+    </script>
+</body>
+</html>
