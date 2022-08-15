@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass8c</title>
+</head>
+<body>
+    <h2 style="padding: 10px; text-align: center;">Write a code in JavaScript to Check all Students passed  (not passing elements one by one to function)</h2>
+    <h3 style="text-align: center;">Result:- <span id="result" style="font-size: 20px;"></span> </h3>
+    <script>
+         var a=[];
+         for(var i=0;i<4;i++)
+         {
+             var inp=prompt('Enter the 4 Students marks b/w 0 to 100');
+             a.push(inp);
+
+         }
+         for(var i=0;i<4;i++)
+         {
+            if(a[i]<33)
+            {
+               // document.write('All Student are not pass');
+                document.getElementById('result').innerHTML='All Students are not pass';
+                break;
+            }
+             
+
+         }
+         if(i==4)
+         {
+            // document.write('All students are pass');
+             document.getElementById('result').innerHTML='All Students are  pass';
+         }
+     </script>
+</body>
+</html>
