@@ -17,19 +17,20 @@
     <h2 style="text-align:center ; padding: 20px; background-color: aquamarine;">Input String:- <span id="inp" style="font-size: 20px;"></span></h2>
     <h2 style="text-align: center; padding: 20px; background-color: aqua;">Result String is:- <span id="re" style="font-size: 20px;"></span></h2>
 </div>
+
    <script>
       var str = prompt("Enter the String");
       document.getElementById('inp').innerHTML=str;
       constr(str);
       function constr(str) {
         var n = str.length;
-        //console.log(n);
+        
         str = str.split("");
         var stt = "";
         if (n < 3) {
           str2 = str.join("");
           document.getElementById('re').innerHTML=str2;
-         // console.log(str2);
+         
         } else {
           for (var i = 0; i < 3; i++) {
             stt = stt + str[i];
@@ -38,7 +39,7 @@
             stt = stt + str[j];
           }
           document.getElementById('re').innerHTML=stt;
-          //console.log(stt);
+          
         }
       }
     </script>
