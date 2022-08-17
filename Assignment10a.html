@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h2 style="text-align: center; padding: 20px; background-color: azure; ">   Write a Program to use call() and apply() Method.</h2>
+    <h3> By Call Function:-  <span id="call"></span></h3>
+    <h3> By Apply Function:- <span id="apply"></span></h3>
+    <script>
+
+    var address=
+        {
+            firstname:"Shailesh",
+            lastname:"Yadav",
+            age:20,
+            
+            fullname: function()
+            {
+                return this.firstname+" "+this.lastname +" "+"Age-"+this.age;
+            },
+            fulladdress: function( city,country )
+            {
+                return this.firstname+" "+this.lastname +" "+"Age-"+this.age+" "+city+" "+country;
+            }
+               
+        };
+     
+       console.log( address.fullname.call(address));
+       var x=prompt("Enter your City");
+       var y=prompt("Enter your Country")
+       console.log(address.fulladdress.apply(address,[x,y]))
+       document.getElementById('call').innerHTML=address.fullname.call(address);
+       document.getElementById('apply').innerHTML=address.fulladdress.apply(address,[x,y]);
+             
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

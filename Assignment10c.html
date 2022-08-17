@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a Program to call a function in an interval of 3 sec for 5 times</h1>
+    <script>
+        var i=0;
+        function sayhi()
+        {
+            document.write(" Called Function ");
+            i++;
+            document.write("  call "+i+" Time  ");
+            if(i==5)
+            {
+                clearInterval(c);
+            }
+
+        }
+        
+        
+            var c=setInterval(sayhi,3000);
+          
+    </script>
+</body>
+</html>

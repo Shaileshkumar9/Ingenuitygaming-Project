@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2 style="text-align: center; padding: 20px; background-color: azure; "> Write a Program to Filter out people whose age is less than 25 in descending order. </h2>
+     <h2 style="text-align: ;center" > Result:-   <span id="me"></span></h2>
+    <script>
+
+      var people = [
+       { name: "Ashish", age: 23 },
+      { name: "Ajay", age: 21 },
+        { name: "Arvind", age: 26 },
+       { name: "Mahesh", age: 28 },
+       { name: "Jay", age: 19 }
+      ];
+      var bigpeop=people.filter((ag1)=>ag1.age<25).sort();
+     // document.write((JSON.stringify(bigpeop, null, 4)));
+      document.getElementById('me').innerHTML=JSON.stringify(bigpeop, null, 4);
+      //console.log(bigpeop);
+
+      
+    </script>
+
+    
+</body>
+</html>

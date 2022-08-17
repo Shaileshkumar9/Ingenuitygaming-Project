@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px; background-color: azure; ">Write a Program to create an array having cube root of every element of another array.</h1>
+    <div class="resu" style="text-align: center; background-color: rgb(31, 209, 209);"></div>
+    <h2 style="text-align: center; padding: 20px; background-color: aqua;">Your Input Value is:- <span id="or"></span></h2>
+    <h2 style="text-align: center; padding: 20px;">Cube root Value is:- <span id="re"></span></h2>
+
+</div>
+    <script>
+        var n=4;
+        var ar=[];
+      //  prompt("enter some");
+        for(var i=0;i<n;i++)
+        {
+            ar[i]=prompt("Enter the Integer for finding cube root");
+        }
+        var newar=ar.map((i)=>Math.cbrt(i))
+        document.getElementById('or').innerHTML=ar;
+        document.getElementById('re').innerHTML=newar;
+      //  console.log(newar);
+    </script>
+
+</body>
+</html>
