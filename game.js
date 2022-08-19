@@ -49,9 +49,6 @@ function start() {
   }
 
 
-  //jkhfdkjvhdkj
-
-    // startti();
 }
 function point() {
   p = p + 1;
@@ -70,16 +67,14 @@ var timeLeft = 60;
 function gameOver() {
  
   cancelInterval(timer);
-  
- 
-  //$('#playAgainButton').show();
+
 
 }
 
 function updateTimer() {
   timeLeft = timeLeft - 1;
   if(timeLeft >= 0)
-    //$('#score').html(timeLeft);
+ 
     document.getElementById('score2').innerHTML=timeLeft;
   else {
     gameOver();
@@ -93,6 +88,5 @@ function startti() {
  
   updateTimer();
   
-  
-   //$('#playAgainButton').hide();
+
 }
