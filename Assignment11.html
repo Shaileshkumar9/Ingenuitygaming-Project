@@ -7,11 +7,11 @@
     <title>WHAKE A MOLE GAME</title>
     <link rel="stylesheet" href="./gamecss.css" />
   </head>
-  <body>
+  <body>`
     <h1>WHAKE A MOLE</h1>
     <img src="./images/mole.png" id="mole" />
     <img src="./images/dirt.svg" id="mud" />
-    <button type="button" id="start" onclick="start()">START</button>
+    <button type="button" id="start" onclick="start() ; play()">START</button>
 
     <img src="./images/dirt.svg" id="dirt1" class="dirt" />
     <img src="./images/dirt.svg" id="dirt2" class="dirt" />
@@ -28,6 +28,8 @@
     <img src="./images/mole.png" id="mole6" onclick="point()" class="mole" />
 
     <span class="points">YOUR POINT :-  <span id="score">0</span></span>
+    <span class="points2">Time :-  <span id="score2">0</span></span>
+
     <span id="currentPoint" class="points">0</span>
 
     <script src="game.js"></script>
