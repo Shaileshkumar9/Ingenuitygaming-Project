@@ -8,10 +8,11 @@ var toInput=document.querySelector(".todo-input");
 var btn = document.querySelector("button");
 var todoList=document.querySelector(".todo-list");
 var ll=0;
+ll=Number(window.localStorage.getItem('numberItems'));
+console.log(ll);
 
 
-
-for(var i=0;i<10;i++)
+for(var i=0;i<50;i++)
 {
     var rr="tt"+i;
     if(window.localStorage.getItem(rr)==null)
@@ -85,12 +86,13 @@ todoList.onclick=function checkbtn(e){
     {
 
         
-       var oo="tt"+ll;
+       var oo="tt"+ Number(ll);
 
         window.localStorage.setItem(oo,toInput.value);
-        ll=ll+1;
-        console.log(ll);
-       // window.localStorage.setItem("numberItems",ll);
+        console.log(oo);
+        ll=Number(ll)+1;
+        //console.log(ll);
+        window.localStorage.setItem("numberItems",ll);
   
 
 
@@ -102,7 +104,7 @@ todoList.onclick=function checkbtn(e){
     var newLi=document.createElement("li");
     newLi.classList.add("todo_item");
     //newLi.innerHTML=toInput.value ;
-    console.log(oo);
+    //console.log(oo);
      newLi.innerHTML=window.localStorage.getItem(oo) ;
 
     // document.getElementById("stored").innerHTML= window.localStorage.getItem(oo);
