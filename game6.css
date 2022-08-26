@@ -1,0 +1,98 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    color: white;
+    font-size: 30px;
+    background-image: url('https://img.freepik.com/free-vector/space-game-background-neon-night-alien-landscape_107791-1624.jpg?size=626&ext=jpg&ga=GA1.2.654880244.1659504230');
+    background-size: cover;
+    border: 2px solid red; 
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }LKJIIKIUJI
+  h1{padding: 0;margin: 0;}
+  #canvas {
+     border: 2px solid green; 
+     margin-top: 10px; 
+     background-color: azure; 
+    border-radius: 10px;
+  }
+  /* #canvas img{
+    width: 900px;
+    height: 900px;
+  /* } */
+  /* #source {
+    display: none;
+     border: 2px solid blue;   
+    
+  }
+  
+
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.755);
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c221c957092339.59c8dfa58d6d7.jpg');
+    font-family: arial;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #canvas {
+    margin-top: 10px;
+    background-color: azure;
+    border-radius: 10px;
+  }
+  
+  #source {
+    display: none;
+  } */ 
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    color: white;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c221c957092339.59c8dfa58d6d7.jpg');
+    font-family: arial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #canvas {
+    margin-top: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    background-image: url('https://media.istockphoto.com/vectors/pixel-art-star-sky-at-evening-vector-illustration-vector-id1182467404?b=1&k=20&m=1182467404&s=612x612&w=0&h=IQ_Uv_tgoSmTdUslJ4ibYjFl3erzdludIqnxGou832E=');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #source {
+    display: none;
+  }
+
+
